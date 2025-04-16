@@ -7,6 +7,21 @@
 	<version>3.0.0-SNAPSHOT</version>
 	<name>simple-app</name>
 	<url>http://maven.apache.org</url>
+
+	<build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <version>3.11.0</version> <!-- Use a recent version -->
+      <configuration>
+        <source>11</source>   <!-- or 17 -->
+        <target>11</target>   <!-- or 17 -->
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
+
 	
 	<dependencies>
 
@@ -23,5 +38,10 @@
 	<properties>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
+    
 </properties>
+	<configuration>
+  <release>11</release>
+</configuration>
+	
 </project>
